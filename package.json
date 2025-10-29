@@ -1,0 +1,53 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Simple Vanilla JS Calculator",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "format": "prettier --write \"src/**/*.{js,css,html}\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vidfefe/calculator.git"
+  },
+  "keywords": [
+    "calculator",
+    "vanilla-js",
+    "webpack"
+  ],
+  "author": "Victoria Korneichuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vidfefe/calculator/issues"
+  },
+  "homepage": "https://github.com/vidfefe/calculator#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "src/**/*.{css,html}": [
+      "prettier --write"
+    ]
+  }
+}
