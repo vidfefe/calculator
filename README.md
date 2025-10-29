@@ -2,6 +2,8 @@
 
 Link to document: https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92cspVailrPYoaXSYrW8/edit?tab=t.0
 
+Link to calculator: https://vidfefe.github.io/calculator/
+
 ## How to Run the App
 
 ### Prerequisites
